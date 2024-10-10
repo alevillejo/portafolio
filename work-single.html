@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Alejandro Villegas</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+ <style>
+        /* Slideshow wrapper for 16:9 aspect ratio */
+        .slideshow-wrapper {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625 * 100) */
+            margin: auto;
+            overflow: hidden; /* Ensure images are cropped */
+        }
+
+        /* Basic styling for the slideshow */
+        .slideshow-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; /* Fill the wrapper */
+        }
+
+        /* Slideshow images */
+        .slides {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;  /* Start invisible */
+            transition: opacity 1.5s ease;  /* Smooth fade-in and fade-out */
+            object-fit: cover; /* This crops the image to fill the container */
+        }
+
+        .slides.show {
+            opacity: 1; /* Fully visible slide */
+        }
+
+        /* Navigation dots */
+        .dots {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background-color: #717171;
+        }
+
+        /* YouTube video wrapper for 16:9 aspect ratio */
+        .youtube-video-wrapper {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            margin: 20px 0; /* Add margin for spacing */
+            overflow: hidden;
+        }
+
+        /* YouTube iframe styling */
+        .youtube-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0; /* Remove default iframe border */
+        }
+
+    </style>
+</head>
+
+<body>
+
+  <!-- ======= Navbar ======= -->
+  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+    <div class="container py-2 py-md-5">
+      <div class="row align-items-start">
+        <div class="col-md-2">
+          <ul class="custom-menu">
+            <li><a href="index.html">Works</a></li>
+            <li><a href="about.html">About Me</a></li>
+           <!-- <li><a href="services.html">Services</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <!-- ======= <a class="navbar-brand" href="index.html"> Alejandro Villegas</a> ======= -->
+      <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>  
+
+  <main id="main">
+  
+    <section class="section">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-10" data-aos="fade-up">
+            <h1><a class="navbar-brand" href="index.html"> < </a></h1>
+            <h2>Elektromugre</h2>
+            <p class="mb-0">2016-2020</p>
+
+   
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section pb-0">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-md-8" data-aos="fade-up">
+                        <p class="mb-0">An installation consisting of a series of sculptures first exhibited in 2016 as part of the undergraduate project "Elektromugre" at the Universidad de los Andes. That same year, it was showcased at Voltaje, one of the most important art and technology fairs in Colombia. In 2018, it was developed into an open public lab held at the Exploratorio in Medellín through a grant awarded by Plataforma Bogotá and the Instituto Distrital de las Artes. This was where Elektromugre was first presented as a live performance centered around noise and sound experimentation. It has been featured in festivals such as "Viva la noizz", "Ruido y política", "Bogotrax", and "Sonofest".</p>
+            <div class="slideshow-wrapper">
+              <div class="slideshow-container">
+                 <!-- Slide 1 -->
+                  <img class="slides fade" src="assets/img/image1.jpg" alt="Slide 1">
+                 <!-- Slide 2 -->
+                  <img class="slides fade" src="assets/img/image2.jpg" alt="Slide 2">
+                  <!-- Slide 3 -->
+                   <img class="slides fade" src="assets/img/image3.jpg" alt="Slide 3">
+              </div>
+</div>
+
+                <!-- Navigation dots -->
+              <div class="dots">
+                 <span class="dot" onclick="currentSlide(1)"></span>
+                 <span class="dot" onclick="currentSlide(2)"></span>
+                 <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+                       <p>The work exposes the circuits of discarded and "obsolete" electronics, spreading them out like skinned animals, fed with electricity as they intermingle like an orgy of living corpses. Electromagnetic microphones amplify the fields produced by the machines, revealing complex layers of high and low frequencies in constant tones and rhythmic sequences. Assembled for their sonic potential, these bare circuits form a mutant of scrap metal that unveils not only electromagnetic fields but also hidden structures usually concealed under plastic and metal. However, it is not a naïve fascination; the work subverts this phenomenon by exposing waste and discarded technology, prompting reflection on consumption, reuse, and the role of technology in society—especially in so-called "third world" countries, where resourcefulness has historically been displaced by those who produce and control technology markets.</p>
+              <div class="youtube-video-wrapper">
+              <iframe class="youtube-video" src="https://www.youtube.com/embed/G7mao4X8rTU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="youtube-video-wrapper">
+              <iframe class="youtube-video" src="https://www.youtube.com/embed/lo87QolJa5s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-md-3 ml-auto" data-aos="fade-up" data-aos-delay="100">
+              <div class="sticky-content">
+               <!-- <h3 class="h3">Boxed Water</h3> -->
+               <!-- <p class="mb-4"><span class="text-muted">Design</span></p> -->
+
+                <div class="mb-5">
+                  
+
+                </div>
+
+                <h4 class="h4 mb-3">What I did</h4>
+                <ul class="list-unstyled list-line mb-5">
+                  <li>Concept</li>
+                  <li>Design & build electronics</li>
+                  <li>Installation</li>
+                  <li>Compositions</li>
+                  <li>Live Performance</li>
+                  <li>Workshops</li>
+                </ul>
+
+               <!--  <p><a href="#" class="readmore">Visit Website</a></p> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+   <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm social text-md-center">
+          <a href="https://www.instagram.com/alevillejo/#" target="_blank"><span class="bi bi-instagram"></span></a>
+          <a href="https://soundcloud.com/user-364864256" target="_blank"><span class="bi bi-soundwave"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+<script>
+    let slideIndex = 0;
+    let autoSlideTimeout;
+    const animationDuration = 1500;  // In milliseconds (matches the fade duration)
+
+    // Initial call to show slides
+    showSlides();
+
+    function showSlides(n) {
+        let slides = document.getElementsByClassName("slides");
+        let dots = document.getElementsByClassName("dot");
+
+        // Reset the timeout to prevent auto-slide during manual change
+        clearTimeout(autoSlideTimeout);
+
+        // If n is passed, use it to set the slideIndex, otherwise increase it automatically
+        if (n) {
+            slideIndex = n - 1;
+        } else {
+            slideIndex++;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+        }
+
+        // Hide all slides (set opacity to 0)
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.remove('show');
+        }
+
+        // Remove 'active' class from all dots
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        // Show the current slide by adding 'show' class
+        slides[slideIndex].classList.add('show');
+        dots[slideIndex].className += " active";
+
+        // Automatically change slide after the animation finishes (add a slight delay)
+        autoSlideTimeout = setTimeout(showSlides, animationDuration + 2500); // Slide changes after fade ends
+    }
+
+    // When a dot is clicked, show the corresponding slide
+    function currentSlide(n) {
+        showSlides(n);
+    }
+</script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
